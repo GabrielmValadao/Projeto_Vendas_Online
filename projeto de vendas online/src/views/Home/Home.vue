@@ -2,9 +2,9 @@
   <h1 class="titulo">Funkos</h1>
 
   <div class="itens-lista">
-    <v-card width="20%" class="pa-2" v-for="product in products" :key="product.id">
+    <v-card width="20%" class="pa-2" v-for="produto in produtos" :key="produto.id">
       <v-img
-        :src="product.imagem"
+        :src="produto.imagem"
         gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
         width="200px"
         height="200px"
@@ -12,12 +12,12 @@
         class="align-end"
         aspect-radio="1/1"
       >
-        <v-card-title class="nome">{{product.nome}}</v-card-title>
+        <v-card-title class="nome">{{produto.nome}}</v-card-title>
       </v-img>
-      <v-card-subtitle class="pt-4"> 10x de {{new Intl.NumberFormat('pt-BR',{ style: 'currency', currency:'BRL'}).format(product.parcela)}} </v-card-subtitle>
+      <v-card-subtitle class="pt-4"> 10x de {{new Intl.NumberFormat('pt-BR',{ style: 'currency', currency:'BRL'}).format(produto.parcela)}} </v-card-subtitle>
       <!-- new intl, transforma o valor para R$  -->
       <v-card-actions>
-        <v-btn color="#A9D9D0"> COMPRAR </v-btn>
+        <v-btn color="#A9D9D0" @click= "() => adicionarAoCarinho(produto)"> COMPRAR </v-btn> 
       </v-card-actions>
     </v-card>
   </div>
@@ -29,7 +29,10 @@ import axios from "axios";
 export default {
     data() {
         return {
-            products: []
+            produtos: [],
+            produtosCarrinho: [],
+            // var para acesso das variveis globais 
+            mensagemEstadoGlobal: this.$store.state.mensagem  
         }
     },
   mounted() {
@@ -49,6 +52,9 @@ export default {
           alert("Produtos não recuperados!");
         });
     },
+    adicionarAoCarinho(produto) {
+        this.produtosCarrinho.push(produto) 
+    }
   },
 };
 </script>
