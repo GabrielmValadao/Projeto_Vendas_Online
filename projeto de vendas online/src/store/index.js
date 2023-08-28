@@ -3,13 +3,19 @@ import { createStore } from 'vuex'
 const store = createStore({
     state() {
         return {
-            menssagem: 'Olá mundo'
+            produtosCarrinho: []
+        }
+    },
+
+    mutations: {
+        adicionarProdutoAoCarrinho(state, value) {
+            state.produtosCarrinho = [...state.produtosCarrinho, value]
         }
     },
 
     actions: {
-        alterarNome() {
-            console.log("entrei aqui")
+        adicionarProduto(context, value) {
+            context.commit("adionarProdutoAoCarrinho", value.product) 
         }
     }
 })

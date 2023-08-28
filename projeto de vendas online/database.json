@@ -2,21 +2,21 @@
   "produtos": [
     {
       "id": 1,
-      "imagem": "https://www.lojatoyscollections.com.br/cdn/shop/products/Funko-Pop-BoRuto--Naruto---Hokage--724-5e4d188fcbb82_720x.jpg?v=1656621416",
+      "imagem": "https://m.media-amazon.com/images/I/61fqi0r0T1L._AC_SL1500_.jpg",
       "nome": "Naruto Uzumaki",
       "preco": 89.90,
       "parcela": 8.99
     },
     {
       "id": 2,
-      "imagem": "https://www.lojatoyscollections.com.br/cdn/shop/products/Funko-Pop-BoRuto--Naruto---Hokage--724-5e4d188fcbb82_720x.jpg?v=1656621416",
+      "imagem": "https://m.media-amazon.com/images/I/51pPqe8OhBL._AC_SL1200_.jpg",
       "nome": "Sasuke Uchiha",
       "preco": 50.00,
       "parcela": 5.00
     },
     {
       "id": 3,
-      "imagem": "https://www.lojatoyscollections.com.br/cdn/shop/products/Funko-Pop-BoRuto--Naruto---Hokage--724-5e4d188fcbb82_720x.jpg?v=1656621416",
+      "imagem": "https://m.media-amazon.com/images/I/31RqAGlQGqL._AC_.jpg",
       "nome": "Sakura Haruno",
       "preco": 75.00,
       "parcela": 7.50
