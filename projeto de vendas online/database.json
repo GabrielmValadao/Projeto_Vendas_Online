@@ -2,70 +2,70 @@
   "produtos": [
     {
       "id": 1,
-      "imagem": "https://m.media-amazon.com/images/I/61fqi0r0T1L._AC_SL1500_.jpg",
+      "imagem": "https://geekfanaticos.fbitsstatic.net/img/p/funko-pop-naruto-71-naruto-shippuden-70340/256823.jpg?w=540&h=540&v=no-change&qs=ignore",
       "nome": "Naruto Uzumaki",
       "preco": 89.90,
       "parcela": 8.99
     },
     {
       "id": 2,
-      "imagem": "https://m.media-amazon.com/images/I/51pPqe8OhBL._AC_SL1200_.jpg",
+      "imagem": "https://geekfanaticos.fbitsstatic.net/img/p/funko-pop-sasuke-72-naruto-71744/258230-1.jpg?w=540&h=540&v=no-change&qs=ignore",
       "nome": "Sasuke Uchiha",
       "preco": 50.00,
       "parcela": 5.00
     },
     {
       "id": 3,
-      "imagem": "https://m.media-amazon.com/images/I/31RqAGlQGqL._AC_.jpg",
+      "imagem": "https://geekfanaticos.fbitsstatic.net/img/p/funko-pop-sakura-183-naruto-shippuden-73425/259912.jpg?w=540&h=540&v=no-change&qs=ignore",
       "nome": "Sakura Haruno",
       "preco": 75.00,
       "parcela": 7.50
     },
     {
       "id": 4,
-      "imagem": "https://www.lojatoyscollections.com.br/cdn/shop/products/Funko-Pop-BoRuto--Naruto---Hokage--724-5e4d188fcbb82_720x.jpg?v=1656621416",
+      "imagem": "https://geekfanaticos.fbitsstatic.net/img/p/funko-pop-kakashi-lightning-blade-special-edition-548-naruto-shippuden-73786/260274.jpg?w=540&h=540&v=no-change&qs=ignore",
       "nome": "Kakashi Hatake",
       "preco": 60.00,
       "parcela": 6.00
     },
     {
       "id": 5,
-      "imagem": "https://www.lojatoyscollections.com.br/cdn/shop/products/Funko-Pop-BoRuto--Naruto---Hokage--724-5e4d188fcbb82_720x.jpg?v=1656621416",
+      "imagem": "https://geekfanaticos.fbitsstatic.net/img/p/funko-pop-anbu-itachi-special-edition-1027-naruto-shippuden-73750/260238.jpg?w=540&h=540&v=no-change&qs=ignore",
       "nome": "Itachi Uchiha",
       "preco": 95.00,
       "parcela": 9.50
     },
     {
       "id": 6,
-      "imagem": "https://www.lojatoyscollections.com.br/cdn/shop/products/Funko-Pop-BoRuto--Naruto---Hokage--724-5e4d188fcbb82_720x.jpg?v=1656621416",
+      "imagem": "https://m.media-amazon.com/images/I/61adHoVfHxL._AC_SL1500_.jpg",
       "nome": "Hinata Hyuga",
       "preco": 45.00,
       "parcela": 4.50
     },
     {
       "id": 7,
-      "imagem": "https://www.lojatoyscollections.com.br/cdn/shop/products/Funko-Pop-BoRuto--Naruto---Hokage--724-5e4d188fcbb82_720x.jpg?v=1656621416",
+      "imagem": "https://geekfanaticos.fbitsstatic.net/img/p/funko-pop-gaara-728-naruto-shippuden-71535/258020.jpg?w=540&h=540&v=no-change&qs=ignore",
       "nome": "Gaara do Deserto",
       "preco": 70.00,
       "parcela": 7.00
     },
     {
       "id": 8,
-      "imagem": "https://www.lojatoyscollections.com.br/cdn/shop/products/Funko-Pop-BoRuto--Naruto---Hokage--724-5e4d188fcbb82_720x.jpg?v=1656621416",
+      "imagem": "https://geekfanaticos.fbitsstatic.net/img/p/funko-pop-rides-jiraiya-on-toad-73-special-edition-naruto-shippuden-73807/260295-2.jpg?w=540&h=540&v=no-change&qs=ignore",
       "nome": "Jiraiya",
       "preco": 55.00,
       "parcela": 5.50
     },
     {
       "id": 9,
-      "imagem": "https://www.lojatoyscollections.com.br/cdn/shop/products/Funko-Pop-BoRuto--Naruto---Hokage--724-5e4d188fcbb82_720x.jpg?v=1656621416",
+      "imagem": "https://geekfanaticos.fbitsstatic.net/img/p/funko-pop-orochimaru-729-naruto-shippuden-71534/258019.jpg?w=540&h=540&v=no-change&qs=ignore",
       "nome": "Orochimaru",
       "preco": 65.00,
       "parcela": 6.50
     },
     {
       "id": 10,
-      "imagem": "https://www.lojatoyscollections.com.br/cdn/shop/products/Funko-Pop-BoRuto--Naruto---Hokage--724-5e4d188fcbb82_720x.jpg?v=1656621416",
+      "imagem": "https://m.media-amazon.com/images/I/61GDYsg6NkL._AC_SL1500_.jpg",
       "nome": "Tsunade Senju",
       "preco": 80.00,
       "parcela": 8.00
