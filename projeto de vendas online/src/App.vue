@@ -17,4 +17,13 @@
     </v-layout>
   </template>
 
-  
+  <style scoped> 
+.titulo {
+    display: flex;
+    justify-content: center;
+}
+
+    a {
+        text-decoration: none;
+    }
+</style>

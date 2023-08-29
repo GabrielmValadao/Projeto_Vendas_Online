@@ -32,3 +32,7 @@
     </tbody>
   </v-table>
 </template>
+
+<style scoped>
+
+</style>
