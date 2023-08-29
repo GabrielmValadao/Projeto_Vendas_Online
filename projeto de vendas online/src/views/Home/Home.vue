@@ -1,10 +1,12 @@
 <template>
-  <h1 class="titulo">Funkos</h1>
-
   
-
   <div class="itens-lista">
-    <v-card width="30%" class="pa-1 ma-1"  v-for="product in products" :key="product.id">
+    <v-card
+      width="30%"
+      class="pa-1 ma-1"
+      v-for="product in products"
+      :key="product.id"
+    >
       <v-img
         :src="product.imagem"
         gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
@@ -14,13 +16,32 @@
         class="align-end"
         aspect-radio="1/1"
       >
-        <v-card-title class="nome">{{product.nome}}</v-card-title>
+        <v-card-title class="nome">{{ product.nome }}</v-card-title>
       </v-img>
-      <v-card-subtitle class="pt-1"> {{new Intl.NumberFormat('pt-BR',{ style: 'currency', currency:'BRL'}).format(product.preco)}} </v-card-subtitle>
-      <v-card-subtitle class="pt-1"> 10x de {{new Intl.NumberFormat('pt-BR',{ style: 'currency', currency:'BRL'}).format(product.parcela)}} </v-card-subtitle>
+      <v-card-subtitle class="pt-1">
+        {{
+          new Intl.NumberFormat("pt-BR", {
+            style: "currency",
+            currency: "BRL",
+          }).format(product.preco)
+        }}
+      </v-card-subtitle>
+      <v-card-subtitle class="pt-1">
+        10x de
+        {{
+          new Intl.NumberFormat("pt-BR", {
+            style: "currency",
+            currency: "BRL",
+          }).format(product.parcela)
+        }}
+      </v-card-subtitle>
       <!-- new intl, transforma o valor para R$  -->
       <v-card-actions>
-        <v-btn color="#A9D9D0" @click="() => this.$store.dispatch('adicionarProduto', { product })"> COMPRAR </v-btn> 
+        <v-btn
+          color="#A9D9D0"
+          @click="() => this.$store.dispatch('adicionarProduto', { product })">
+          COMPRAR
+        </v-btn>
       </v-card-actions>
     </v-card>
   </div>
@@ -30,16 +51,25 @@
 import axios from "axios";
 
 export default {
-    data() {
-        return {
-            products: [],
-            
-            // var para acesso das variveis globais 
-            mensagemEstadoGlobal: this.$store.state.mensagem  
-        }
+  data() {
+    return {
+      products: [],
+    };
+  },
+
+  /* 
+  computed: {
+
+    comparação de dois arrays
+    produtosRestantes() {
+      
+      return this.products.filter((product) => this.$store.state.produtosCarrinho.some((item) => item.id === product.id)
+      )}
     },
+    */ 
+
   mounted() {
-    this.loadProducts() 
+    this.loadProducts();
   },
   methods: {
     loadProducts() {
@@ -48,8 +78,7 @@ export default {
         method: "GET",
       })
         .then((response) => {
-
-            this.products = response.data
+          this.products = response.data;
         })
         .catch(() => {
           alert("Produtos não recuperados!");
@@ -60,19 +89,13 @@ export default {
 </script>
 
 <style scoped>
-.titulo {
-  color: rgb(169, 217, 208);
-  display: flex;
-  justify-content: center;
-}
 
 .itens-lista {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .nome {
   color: rgb(197, 237, 230);
 }
-
 </style>
