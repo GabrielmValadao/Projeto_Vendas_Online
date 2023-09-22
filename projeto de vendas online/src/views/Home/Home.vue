@@ -1,5 +1,4 @@
 <template>
-  
   <div class="itens-lista">
     <v-card
       width="30%"
@@ -35,11 +34,11 @@
           }).format(product.parcela)
         }}
       </v-card-subtitle>
-      <!-- new intl, transforma o valor para R$  -->
       <v-card-actions>
         <v-btn
           color="#A9D9D0"
-          @click="() => this.$store.dispatch('adicionarProduto', { product })">
+          @click="() => this.$store.dispatch('adicionarProduto', { product })"
+        >
           COMPRAR
         </v-btn>
       </v-card-actions>
@@ -56,17 +55,6 @@ export default {
       products: [],
     };
   },
-
-  /* 
-  computed: {
-
-    comparação de dois arrays
-    produtosRestantes() {
-      
-      return this.products.filter((product) => this.$store.state.produtosCarrinho.some((item) => item.id === product.id)
-      )}
-    },
-    */ 
 
   mounted() {
     this.loadProducts();
@@ -89,7 +77,6 @@ export default {
 </script>
 
 <style scoped>
-
 .itens-lista {
   display: flex;
   flex-wrap: wrap;
